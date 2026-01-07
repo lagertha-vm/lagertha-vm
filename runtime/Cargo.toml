@@ -1,5 +1,5 @@
 [package]
-name = "runtime"
+name = "lagertha-runtime"
 version = "0.1.0"
 edition = "2024"
 
@@ -25,9 +25,9 @@ tokio = { version = "1.48.0", features = ["sync", "net", "rt", "io-util", "macro
 hotpath = { workspace = true }
 tracing-log = { workspace = true }
 
-jclass = { path = "../jclass" }
-jimage = { path = "../jimage" }
-common = { path = "../common" }
+lagertha-classfile = { git = "https://github.com/lagertha-vm/lagertha-classfile" }
+lagertha-image = { git = "https://github.com/lagertha-vm/lagertha-image" }
+lagertha-common = { git = "https://github.com/lagertha-vm/lagertha-common" }
 
 # TODO to be deleted
 toml = "0.8"

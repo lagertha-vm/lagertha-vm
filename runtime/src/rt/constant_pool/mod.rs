@@ -5,8 +5,8 @@ use crate::rt::constant_pool::entry::{
     StringEntry, Utf8Entry,
 };
 use crate::{Symbol, build_exception, throw_exception};
-use jclass::attribute::class::BootstrapMethodEntry;
-use jclass::constant::ConstantInfo;
+use lagertha_classfile::attribute::class::BootstrapMethodEntry;
+use lagertha_classfile::constant::ConstantInfo;
 use lasso::ThreadedRodeo;
 use std::fmt::Display;
 

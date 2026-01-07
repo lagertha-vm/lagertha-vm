@@ -1,7 +1,7 @@
 use crate::class_loader::system::SystemClassLoader;
 use crate::error::JvmError;
 use crate::{VmConfig, debug_log};
-use jimage::JImage;
+use lagertha_image::JImage;
 use std::path::PathBuf;
 //use toml::Value;
 //use toml_edit::Document;

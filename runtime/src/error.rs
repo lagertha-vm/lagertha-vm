@@ -1,9 +1,9 @@
 use crate::heap::HeapRef;
 use crate::keys::{MethodKey, Symbol};
 use crate::rt::constant_pool::RuntimeConstantType;
-use common::descriptor::MethodDescriptor;
-use common::error::{InstructionErr, LinkageError, RuntimePoolError, TypeDescriptorErr};
-use common::utils::cursor::CursorError;
+use lagertha_common::descriptor::MethodDescriptor;
+use lagertha_common::error::{InstructionErr, LinkageError, RuntimePoolError, TypeDescriptorErr};
+use lagertha_common::utils::cursor::CursorError;
 use lasso::ThreadedRodeo;
 use std::fmt::Display;
 

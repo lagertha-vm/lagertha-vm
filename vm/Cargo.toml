@@ -1,10 +1,10 @@
 [package]
-name = "vm"
+name = "lagertha-vm"
 version = "0.1.0"
 edition = "2024"
 
 [features]
-log-runtime-traces = ["runtime/log-runtime-traces"]
+log-runtime-traces = ["lagertha-runtime/log-runtime-traces"]
 hotpath = ["hotpath/hotpath"]
 hotpath-alloc = ["hotpath/hotpath-alloc"]
 hotpath-off = ["hotpath/hotpath-off"]
@@ -13,8 +13,8 @@ hotpath-off = ["hotpath/hotpath-off"]
 clap = { version = "4.5.47", features = ["derive"] }
 
 hotpath = { workspace = true }
-common = { path = "../common" }
-runtime = { path = "../runtime" }
+lagertha-common = { git = "https://github.com/lagertha-vm/lagertha-common" }
+lagertha-runtime = { path = "../runtime" }
 
 tracing-log = { workspace = true }
 

@@ -1,13 +1,13 @@
 use crate::error::JvmError;
 use crate::keys::{ClassId, MethodDescriptorId};
 use crate::{Symbol, throw_exception};
-use common::error::LinkageError;
-use jclass::attribute::method::code::{
+use lagertha_common::error::LinkageError;
+use lagertha_classfile::attribute::method::code::{
     CodeAttributeInfo, LineNumberEntry, LocalVariableEntry, LocalVariableTypeEntry, StackMapFrame,
 };
-use jclass::attribute::method::{CodeAttribute, ExceptionTableEntry, MethodAttribute};
-use jclass::flags::MethodFlags;
-use jclass::method::MethodInfo;
+use lagertha_classfile::attribute::method::{CodeAttribute, ExceptionTableEntry, MethodAttribute};
+use lagertha_classfile::flags::MethodFlags;
+use lagertha_classfile::method::MethodInfo;
 use std::cell::OnceCell;
 
 pub struct CodeBody {

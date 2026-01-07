@@ -5,7 +5,7 @@ use crate::rt::constant_pool::RuntimeConstant;
 use crate::thread::JavaThreadState;
 use crate::vm::Value;
 use crate::{VirtualMachine, throw_exception};
-use common::instruction::{ArrayType, LookupSwitchData, TableSwitchData};
+use lagertha_common::instruction::{ArrayType, LookupSwitchData, TableSwitchData};
 use std::cmp::Ordering;
 use tracing_log::log::warn;
 

@@ -1,5 +1,5 @@
 use clap::Parser;
-use runtime::VmConfig;
+use lagertha_runtime::VmConfig;
 use tracing_log::log::debug;
 
 #[derive(Parser, Debug)]

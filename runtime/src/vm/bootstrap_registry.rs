@@ -1,6 +1,6 @@
 use crate::error::JvmError;
 use crate::keys::{ClassId, FieldKey, MethodKey, Symbol};
-use common::jtype::PrimitiveType;
+use lagertha_common::jtype::PrimitiveType;
 use lasso::ThreadedRodeo;
 use once_cell::sync::OnceCell;
 
